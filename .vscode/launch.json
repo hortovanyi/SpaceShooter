@@ -1,0 +1,104 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "SpaceShooter (Debug)",
+			"request": "launch",
+			"preLaunchTask": "SpaceShooter Mac Debug Build",
+			"program": "/Users/nick/UnrealProjects/SpaceShooter/Binaries/Mac/UE4-Mac-Debug.app/Contents/MacOS/UE4-Mac-Debug",
+			"args": [
+			],
+			"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23",
+			"type": "lldb"
+		},
+		{
+			"name": "SpaceShooter (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "SpaceShooter Mac DebugGame Build",
+			"program": "/Users/nick/UnrealProjects/SpaceShooter/Binaries/Mac/UE4-Mac-DebugGame.app/Contents/MacOS/UE4-Mac-DebugGame",
+			"args": [
+			],
+			"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23",
+			"type": "lldb"
+		},
+		{
+			"name": "SpaceShooter (Development)",
+			"request": "launch",
+			"preLaunchTask": "SpaceShooter Mac Development Build",
+			"program": "/Users/nick/UnrealProjects/SpaceShooter/Binaries/Mac/UE4.app/Contents/MacOS/UE4",
+			"args": [
+			],
+			"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23",
+			"type": "lldb"
+		},
+		{
+			"name": "SpaceShooter (Shipping)",
+			"request": "launch",
+			"preLaunchTask": "SpaceShooter Mac Shipping Build",
+			"program": "/Users/nick/UnrealProjects/SpaceShooter/Binaries/Mac/UE4-Mac-Shipping.app/Contents/MacOS/UE4-Mac-Shipping",
+			"args": [
+			],
+			"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23",
+			"type": "lldb"
+		},
+		{
+			"name": "SpaceShooter (Test)",
+			"request": "launch",
+			"preLaunchTask": "SpaceShooter Mac Test Build",
+			"program": "/Users/nick/UnrealProjects/SpaceShooter/Binaries/Mac/UE4-Mac-Test.app/Contents/MacOS/UE4-Mac-Test",
+			"args": [
+			],
+			"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23",
+			"type": "lldb"
+		},
+		{
+			"name": "SpaceShooterEditor (Debug)",
+			"request": "launch",
+			"preLaunchTask": "SpaceShooterEditor Mac Debug Build",
+			"program": "/Volumes/VelociRaptor1/EpicGames/UE_4.23/Engine/Binaries/Mac/UE4Editor-Mac-Debug.app/Contents/MacOS/UE4Editor-Mac-Debug",
+			"args": [
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject"
+			],
+			"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23",
+			"type": "lldb"
+		},
+		{
+			"name": "SpaceShooterEditor (DebugGame)",
+			"request": "launch",
+			"preLaunchTask": "SpaceShooterEditor Mac DebugGame Build",
+			"program": "/Volumes/VelociRaptor1/EpicGames/UE_4.23/Engine/Binaries/Mac/UE4Editor-Mac-DebugGame.app/Contents/MacOS/UE4Editor-Mac-DebugGame",
+			"args": [
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject"
+			],
+			"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23",
+			"type": "lldb"
+		},
+		{
+			"name": "SpaceShooterEditor (Development)",
+			"request": "launch",
+			"preLaunchTask": "SpaceShooterEditor Mac Development Build",
+			"program": "/Volumes/VelociRaptor1/EpicGames/UE_4.23/Engine/Binaries/Mac/UE4Editor.app/Contents/MacOS/UE4Editor",
+			"args": [
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject"
+			],
+			"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23",
+			"type": "lldb"
+		},
+		{
+			"name": "Generate Project Files",
+			"type": "mono",
+			"request": "launch",
+			"program": "/Volumes/VelociRaptor1/EpicGames/UE_4.23/Engine/Binaries/DotNET/UnrealBuildTool.exe",
+			"console": "internalConsole",
+			"args": [
+				"-projectfiles",
+				"-vscode",
+				"-project=\"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject\"",
+				"-game",
+				"-engine"
+			],
+			"internalConsoleOptions": "openOnSessionStart",
+			"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+		}
+	]
+}

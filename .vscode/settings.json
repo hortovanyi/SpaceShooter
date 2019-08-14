@@ -1,0 +1,9 @@
+{
+	"files.exclude": {
+		"/Users/nick/UnrealProjects/SpaceShooter/.vscode": true,
+		"/Users/nick/UnrealProjects/SpaceShooter/Content": true,
+		"/Users/nick/UnrealProjects/SpaceShooter/Intermediate": true,
+		"/Users/nick/UnrealProjects/SpaceShooter/Saved": true,
+		"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.xcworkspace": true
+	}
+}

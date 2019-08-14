@@ -1,0 +1,995 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"label": "SpaceShooter Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"Mac",
+				"Debug",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"Mac",
+				"Debug",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceShooter Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"Mac",
+				"Debug",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"Mac",
+				"DebugGame",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"Mac",
+				"DebugGame",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceShooter Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"Mac",
+				"DebugGame",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"Mac",
+				"Development",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"Mac",
+				"Development",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceShooter Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"Mac",
+				"Development",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter Mac Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"Mac",
+				"Shipping",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter Mac Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"Mac",
+				"Shipping",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceShooter Mac Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter Mac Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"Mac",
+				"Shipping",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter Mac Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"Mac",
+				"Test",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter Mac Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"Mac",
+				"Test",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceShooter Mac Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter Mac Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"Mac",
+				"Test",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter IOS Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"IOS",
+				"Debug",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter IOS Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"IOS",
+				"Debug",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceShooter IOS Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter IOS Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"IOS",
+				"Debug",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter IOS DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"IOS",
+				"DebugGame",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter IOS DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"IOS",
+				"DebugGame",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceShooter IOS DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter IOS DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"IOS",
+				"DebugGame",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter IOS Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"IOS",
+				"Development",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter IOS Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"IOS",
+				"Development",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceShooter IOS Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter IOS Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"IOS",
+				"Development",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter IOS Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"IOS",
+				"Shipping",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter IOS Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"IOS",
+				"Shipping",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceShooter IOS Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter IOS Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"IOS",
+				"Shipping",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter IOS Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"IOS",
+				"Test",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter IOS Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"IOS",
+				"Test",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceShooter IOS Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter IOS Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"IOS",
+				"Test",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter HTML5 Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"HTML5",
+				"Debug",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter HTML5 Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"HTML5",
+				"Debug",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceShooter HTML5 Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter HTML5 Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"HTML5",
+				"Debug",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter HTML5 DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"HTML5",
+				"DebugGame",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter HTML5 DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"HTML5",
+				"DebugGame",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceShooter HTML5 DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter HTML5 DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"HTML5",
+				"DebugGame",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter HTML5 Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"HTML5",
+				"Development",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter HTML5 Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"HTML5",
+				"Development",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceShooter HTML5 Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter HTML5 Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"HTML5",
+				"Development",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter HTML5 Shipping Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"HTML5",
+				"Shipping",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter HTML5 Shipping Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"HTML5",
+				"Shipping",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceShooter HTML5 Shipping Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter HTML5 Shipping Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"HTML5",
+				"Shipping",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter HTML5 Test Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"HTML5",
+				"Test",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter HTML5 Test Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"HTML5",
+				"Test",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceShooter HTML5 Test Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooter HTML5 Test Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooter",
+				"HTML5",
+				"Test",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooterEditor Mac Debug Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooterEditor",
+				"Mac",
+				"Debug",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooterEditor Mac Debug Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooterEditor",
+				"Mac",
+				"Debug",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceShooterEditor Mac Debug Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooterEditor Mac Debug Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooterEditor",
+				"Mac",
+				"Debug",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooterEditor Mac DebugGame Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooterEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooterEditor Mac DebugGame Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooterEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceShooterEditor Mac DebugGame Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooterEditor Mac DebugGame Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooterEditor",
+				"Mac",
+				"DebugGame",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooterEditor Mac Development Build",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooterEditor",
+				"Mac",
+				"Development",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooterEditor Mac Development Rebuild",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooterEditor",
+				"Mac",
+				"Development",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex"
+			],
+			"problemMatcher": "$msCompile",
+			"dependsOn": [
+				"SpaceShooterEditor Mac Development Clean"
+			],
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		},
+		{
+			"label": "SpaceShooterEditor Mac Development Clean",
+			"group": "build",
+			"command": "Engine/Build/BatchFiles/Mac/Build.sh",
+			"args": [
+				"SpaceShooterEditor",
+				"Mac",
+				"Development",
+				"/Users/nick/UnrealProjects/SpaceShooter/SpaceShooter.uproject",
+				"-waitmutex",
+				"-clean"
+			],
+			"problemMatcher": "$msCompile",
+			"type": "shell",
+			"options": {
+				"cwd": "/Volumes/VelociRaptor1/EpicGames/UE_4.23"
+			}
+		}
+	]
+}
